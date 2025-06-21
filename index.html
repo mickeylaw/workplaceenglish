@@ -135,6 +135,31 @@
         .section-header button:hover {
             background-color: #2b6cb0;
         }
+
+        /* Styles for week pages */
+        .week-page {
+            display: none; /* Hidden by default */
+        }
+        .week-page.active {
+            display: block; /* Shown when active */
+        }
+        .nav-button {
+            background-color: #63b3ed; /* Blue for nav buttons */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin: 0 0.5rem;
+        }
+        .nav-button:hover {
+            background-color: #4299e1;
+        }
+        .nav-button.active-nav {
+            background-color: #2b6cb0; /* Darker blue for active nav button */
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body class="p-4">
@@ -166,8 +191,16 @@
 
         <h2 class="text-xl mb-4">Weekly Study Plan & Workbook Activities</h2>
 
+        <!-- Navigation Buttons -->
+        <div class="flex justify-center mb-6">
+            <button class="nav-button active-nav" onclick="showWeek('week-1')">Week 1</button>
+            <button class="nav-button" onclick="showWeek('week-2')">Week 2</button>
+            <button class="nav-button" onclick="showWeek('week-3')">Week 3</button>
+            <button class="nav-button" onclick="showWeek('week-4')">Week 4</button>
+        </div>
+
         <!-- WEEK 1 -->
-        <div id="week-1" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+        <div id="week-1" class="week-page active mb-8 p-4 bg-blue-50 rounded-xl shadow">
             <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 1: Foundations of Professional Presence & Meeting Contributions</h2>
             <p class="mb-4 text-blue-700"><strong>Theme:</strong> Making strong first impressions, effective self-introductions, and contributing confidently in meetings.</p>
             <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Audience-Centric Communication, Clarity & Conciseness, Professional Tone and Register.<br>
@@ -350,7 +383,7 @@
         </div>
 
         <!-- WEEK 2 -->
-        <div id="week-2" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+        <div id="week-2" class="week-page mb-8 p-4 bg-blue-50 rounded-xl shadow">
             <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 2: Presenting Information & Handling Q&A</h2>
             <p class="mb-4 text-blue-700"><strong>Theme:</strong> Clearly explaining concepts, presenting data, and responding effectively to questions.</p>
             <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Clarity and Conciseness, Non-Verbal Communication (briefly), Strategic Storytelling (briefly).<br>
@@ -535,7 +568,7 @@
         </div>
 
         <!-- WEEK 3 -->
-        <div id="week-3" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+        <div id="week-3" class="week-page mb-8 p-4 bg-blue-50 rounded-xl shadow">
             <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 3: Collaborative Communication & Feedback</h2>
             <p class="mb-4 text-blue-700"><strong>Theme:</strong> Engaging in collaborative discussions, giving and receiving constructive feedback, and active listening.</p>
             <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Active Listening and Empathy, Collaborative Communication.<br>
@@ -722,7 +755,7 @@
         </div>
 
         <!-- WEEK 4 -->
-        <div id="week-4" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+        <div id="week-4" class="week-page mb-8 p-4 bg-blue-50 rounded-xl shadow">
             <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 4: Advanced Articulation & Strategic Communication</h2>
             <p class="mb-4 text-blue-700"><strong>Theme:</strong> Consolidating skills for advanced articulation, persuasive speaking, and problem-solving communication.</p>
             <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Strategic Storytelling (in depth), Review of all previous concepts.<br>
@@ -939,6 +972,25 @@
             saveData(`w${weekId}_total_score`, totalScore); // Save the total score too
         }
 
+        // Function to show a specific week and hide others
+        function showWeek(weekId) {
+            const weekPages = document.querySelectorAll('.week-page');
+            weekPages.forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(weekId).classList.add('active');
+
+            // Update active state for navigation buttons
+            const navButtons = document.querySelectorAll('.nav-button');
+            navButtons.forEach(button => {
+                button.classList.remove('active-nav');
+            });
+            document.querySelector(`button[onclick="showWeek('${weekId}')"]`).classList.add('active-nav');
+
+            // Removed: window.scrollTo({ top: 0, behavior: 'smooth' }); to preserve scroll position
+        }
+
+
         // Initialize workbook on page load
         document.addEventListener('DOMContentLoaded', () => {
             // Load textareas and input fields
@@ -998,6 +1050,9 @@
             for (let i = 1; i <= 4; i++) {
                 updateWeekTotalScore(i);
             }
+
+            // Show Week 1 by default on load
+            showWeek('week-1');
         });
     </script>
 </body>

@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Workplace English Workbook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-grey */
+            color: #2d3748; /* Dark grey */
+        }
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 1rem; /* More rounded */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        h1, h2, h3, h4 {
+            color: #2b6cb0; /* Stronger blue for headings */
+            font-weight: 700;
+        }
+        h1 { font-size: 2.25rem; margin-bottom: 1.5rem; text-align: center; }
+        h2 { font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        h3 { font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #4299e1; }
+        h4 { font-size: 1.25rem; margin-top: 1rem; margin-bottom: 0.5rem; color: #4a5568; }
+        details {
+            background-color: #ebf8ff; /* Lighter blue for collapsibles */
+            border-left: 5px solid #63b3ed;
+            border-radius: 0.75rem; /* Rounded corners for details */
+            margin-bottom: 0.75rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        summary {
+            padding: 1rem 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            color: #2b6cb0;
+            border-radius: 0.75rem;
+        }
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            background-color: #dbeafe; /* Slightly darker when open */
+        }
+        .details-content {
+            padding: 1rem 1.25rem;
+            padding-top: 0; /* Remove top padding to align with summary */
+        }
+        textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            background-color: #f7fafc;
+            resize: vertical;
+        }
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+            accent-color: #4299e1; /* Blue accent for checkboxes */
+            border-radius: 0.25rem;
+        }
+        .resource-link {
+            color: #4299e1;
+            text-decoration: underline;
+        }
+        .resource-link:hover {
+            color: #2b6cb0;
+        }
+        .rubric-table {
+            width: 100%;
+            border-collapse: separate; /* Allows for border-radius */
+            border-spacing: 0;
+            margin-top: 1.5rem;
+            overflow: hidden; /* Ensures rounded corners on children */
+            border-radius: 0.75rem;
+        }
+        .rubric-table th, .rubric-table td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        .rubric-table th {
+            background-color: #e2e8f0;
+            font-weight: 600;
+            color: #4a5568;
+            position: sticky;
+            top: 0; /* Makes header stick when scrolling */
+        }
+        .rubric-table td:nth-child(1) { font-weight: 500; } /* Criterion column */
+        .rubric-table td:nth-child(6) textarea {
+            min-height: 60px; /* Smaller textarea for notes */
+        }
+        .score-input {
+            width: 60px;
+            padding: 0.5rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .total-score {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            text-align: right;
+            padding-right: 0.75rem;
+        }
+        .section-header {
+            background-color: #dbeafe; /* Light blue */
+            padding: 1rem 1.25rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: #2b6cb0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section-header button {
+            background-color: #4299e1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .section-header button:hover {
+            background-color: #2b6cb0;
+        }
+    </style>
+</head>
+<body class="p-4">
+    <div class="container">
+        <h1>Your Professional Workplace English Study Workbook</h1>
+        <p class="text-center text-lg mb-6">Elevate Your Communication, Accelerate Your Career</p>
+
+        <p class="mb-4 text-center">This workbook is your personalized guide to mastering professional workplace English, designed specifically to help you <strong>better articulate your thoughts, enhance collaborations, speak confidently, and climb the career ladder quicker.</strong></p>
+        <p class="mb-6 text-center">You've identified your "Why," laid out a clear "What" you'll learn (concepts, facts, procedures), and established the "How" (benchmarking, emphasis/exclude). Now, this interactive workbook brings it all together, providing a structured yet flexible path for your 6 hours of dedicated study each week.</p>
+
+        <h2 class="text-xl mb-4">How to Use This Workbook:</h2>
+        <ul class="list-disc pl-5 space-y-2 mb-6">
+            <li><strong>Digital Engagement:</strong> Use a digital document editor (like this browser environment) so you can type directly into the fields, check boxes, and expand sections as needed.</li>
+            <li><strong>Your Vocabulary Journal:</strong> Create a separate digital document or use an app (like Notion, Evernote, or a simple spreadsheet) to keep your dedicated vocabulary journal. This is crucial for tracking new words and phrases.</li>
+            <li><strong>Recording Tools:</strong> Have your phone's voice recorder or a computer-based recording software (like Audacity, QuickTime Player, or even Zoom) ready for your weekly deliverables.</li>
+            <li><strong>Be Honest with Yourself:</strong> The self-assessment rubrics are powerful tools. Be honest when grading yourself – this is how you truly learn and grow.</li>
+            <li><strong>Reflect & Adjust:</strong> Use the "Reflection & Planning" sections to internalize your learning and tailor the upcoming weeks to your evolving needs.</li>
+        </ul>
+
+        <h2 class="text-xl mb-4">My Professional English Learning Journey: The Foundations</h2>
+        <div class="mb-4">
+            <h3 class="text-base font-semibold text-gray-700">My "Why":</h3>
+            <p class="mt-1 p-3 bg-gray-50 rounded-lg border border-gray-200">I want to better articulate my thoughts to enhance collaborations and speak confidently, hence climbing up the career ladder quicker.</p>
+        </div>
+        <div class="mb-6">
+            <h3 class="text-base font-semibold text-gray-700">My Current English Level & Focus Areas:</h3>
+            <p class="mt-1 p-3 bg-gray-50 rounded-lg border border-gray-200">Intermediate to Advanced, lacking varieties of vocabulary. I also want to improve the pronunciation to become more like a native speaker.</p>
+        </div>
+
+        <h2 class="text-xl mb-4">Weekly Study Plan & Workbook Activities</h2>
+
+        <!-- WEEK 1 -->
+        <div id="week-1" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 1: Foundations of Professional Presence & Meeting Contributions</h2>
+            <p class="mb-4 text-blue-700"><strong>Theme:</strong> Making strong first impressions, effective self-introductions, and contributing confidently in meetings.</p>
+            <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Audience-Centric Communication, Clarity & Conciseness, Professional Tone and Register.<br>
+            <strong>Facts Covered:</strong> Key self-introduction phrases, common meeting opening/closing phrases, action verbs for contributions, basic intonation patterns (statements vs. questions).<br>
+            <strong>Procedures Covered:</strong> Structuring contributions (e.g., point-evidence-explanation), polite interruption, articulating complex ideas simply.</p>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Saturday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Concept & Vocabulary Deep Dive (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Read/watch content on effective professional introductions, conciseness in communication, and the basics of meeting etiquette. Identify 10-15 new high-impact professional vocabulary words/phrases from the resources related to self-introductions, expressing opinions, and agreeing/disagreeing. Add these to your vocabulary journal.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Video:</strong> "How to Introduce Yourself Professionally" on YouTube (Search: <a href="https://www.youtube.com/results?search_query=How+to+Introduce+Yourself+Professionally+business+English" target="_blank" class="resource-link">"How to Introduce Yourself Professionally business English"</a>).</li>
+                        <li><strong>Text:</strong> Articles on "Concise Communication in the Workplace" (Search: <a href="https://www.google.com/search?q=Harvard+Business+Review+concise+communication" target="_blank" class="resource-link">"Harvard Business Review concise communication"</a>). Focus on principles of directness and clarity.</li>
+                        <li><strong>Text/Video:</strong> Basic meeting vocabulary and phrases (Search: <a href="https://www.google.com/search?q=Business+English+meeting+phrases+text+or+Business+English+meeting+phrases+video" target="_blank" class="resource-link">"Business English meeting phrases text or Business English meeting phrases video"</a>).</li>
+                    </ul>
+                    <label for="w1s1_notes" class="block font-medium mb-1">My Notes/Key Takeaways from Resources:</label>
+                    <textarea id="w1s1_notes" class="form-textarea"></textarea>
+                    <label for="w1s1_vocab" class="block font-medium mb-1 mt-3">New Vocabulary for Journal (List here before adding to journal):</label>
+                    <textarea id="w1s1_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1s1_c1" class="form-checkbox"> Read/watched resources.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1s1_c2" class="form-checkbox"> Identified and listed 10-15 new vocabulary items.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w1s1_c3" class="form-checkbox"> Added new vocabulary to my dedicated journal with definitions and example sentences.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Pronunciation & Fluency Drill (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Focus on clear articulation of common "problem" sounds (e.g., 'th' sounds if applicable, 'r' sounds, clear vowel sounds specific to your native language). Practice intonation for statements (falling) and questions (rising/falling). Shadow short professional audio clips (e.g., 30-60 second segments from a business podcast or news report), mimicking the speaker's rhythm and intonation.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Video/Audio:</strong> Use pronunciation apps (e.g., ELSA Speak for targeted feedback) or YouTube channels dedicated to English pronunciation (Search: <a href="https://www.youtube.com/results?search_query=English+pronunciation+training+for+professionals+intonation" target="_blank" class="resource-link">"English pronunciation training for professionals intonation"</a> or <a href="https://www.youtube.com/results?search_query=common+English+pronunciation+problems+for+[Your+Native+Language]" target="_blank" class="resource-link">"common English pronunciation problems for [Your Native Language]"</a>).</li>
+                        <li><strong>Audio:</strong> Short segments from a business-related podcast (e.g., "The Daily," "HBR IdeaCast") for shadowing.</li>
+                    </ul>
+                    <label for="w1s2_sounds" class="block font-medium mb-1">Specific Sounds/Intonation Patterns I Focused On:</label>
+                    <textarea id="w1s2_sounds" class="form-textarea"></textarea>
+                    <label for="w1s2_shadowing" class="block font-medium mb-1 mt-3">Shadowing Notes (e.g., words/phrases where I struggled with rhythm):</label>
+                    <textarea id="w1s2_shadowing" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1s2_c1" class="form-checkbox"> Practiced specific challenging sounds.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1s2_c2" class="form-checkbox"> Practiced statement/question intonation.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w1s2_c3" class="form-checkbox"> Completed shadowing exercises.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Application & Preparation (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Draft a 1-minute professional self-introduction that you might use at a networking event or the start of a new project. Then, draft 3-4 potential contributions you could make in a hypothetical team meeting (e.g., agreeing with a point, asking a clarifying question, suggesting an alternative). Incorporate at least 3 new vocabulary items from your journal. Practice speaking these aloud.</p>
+                    <label for="w1s3_intro" class="block font-medium mb-1">My Draft: Professional Self-Introduction:</label>
+                    <textarea id="w1s3_intro" class="form-textarea"></textarea>
+                    <label for="w1s3_meeting" class="block font-medium mb-1 mt-3">My Draft: Meeting Contributions (at least 2 distinct contributions):</label>
+                    <textarea id="w1s3_meeting" class="form-textarea" placeholder="Contribution 1 (e.g., 'I agree with [Name]'s point about...'):&#10;Contribution 2 (e.g., 'Could you clarify what you mean by...?'):&#10;Contribution 3 (optional):"></textarea>
+                    <label for="w1s3_used_vocab" class="block font-medium mb-1 mt-3">New Vocabulary Used in Drafts (List the 3+ words here, or highlight/bold them in your drafts):</label>
+                    <textarea id="w1s3_used_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1s3_c1" class="form-checkbox"> Drafted self-introduction.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1s3_c2" class="form-checkbox"> Drafted meeting contributions.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1s3_c3" class="form-checkbox"> Incorporated at least 3 new vocabulary items.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w1s3_c4" class="form-checkbox"> Practiced speaking drafts aloud.</label>
+                    </div>
+                </div>
+            </details>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Sunday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Speaking Practice & Application (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Rehearse your self-introduction and meeting contributions multiple times. Focus on natural delivery, confident tone, and integrating the new vocabulary and pronunciation patterns. <strong>Record yourself using your phone or computer.</strong> Listen back for clarity and fluency.</p>
+                    <label for="w1su1_learnings" class="block font-medium mb-1">Key Learnings from Rehearsals:</label>
+                    <textarea id="w1su1_learnings" class="form-textarea" placeholder="What felt natural? What felt awkward?&#10;Did I remember to use my new vocabulary naturally?&#10;How was my pacing?"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1su1_c1" class="form-checkbox"> Rehearsed multiple times.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1su1_c2" class="form-checkbox"> Recorded myself (practice recording, not final deliverable yet).</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w1su1_c3" class="form-checkbox"> Reviewed practice recording.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Deliverable Recording & Submission (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Deliverable:</strong> <strong>"Meeting Contribution & Professional Intro" Audio Recording.</strong></p>
+                    <p class="mb-2"><strong>Assignment:</strong> Record an audio file (3-4 minutes total) that includes:</p>
+                    <ol class="list-decimal pl-5 mb-3 text-gray-700">
+                        <li>Your 1-minute professional self-introduction.</li>
+                        <li>A simulated scenario where you contribute to a meeting. You can act as if you're agreeing with a colleague, politely disagreeing, asking a strategic question, or offering a new idea. Make at least two distinct contributions (e.g., 30-60 seconds each).</li>
+                    </ol>
+                    <p class="mb-3 text-sm text-gray-600"><strong>Specs:</strong> Ensure clear audio. Speak naturally as if in a real conversation.<br><strong>File Naming Convention:</strong> `YourName_Week1_Deliverable.mp3` (or .wav)</p>
+                    <label for="w1su2_deliverable_confirm" class="block font-medium mb-1">Confirm Deliverable Recording (e.g., "File saved"):</label>
+                    <input type="text" id="w1su2_deliverable_confirm" class="form-input w-full p-2 border rounded-md">
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1su2_c1" class="form-checkbox"> Recorded final deliverable.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w1su2_c2" class="form-checkbox"> Named file correctly.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w1su2_c3" class="form-checkbox"> Saved file for future review/sharing.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Review & Self-Reflection (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Listen to your recorded deliverable. Using the rubric below, grade yourself honestly. Note down specific sentences or phrases where you felt you could improve. Identify 1-2 key areas (e.g., "more varied verbs," "smoother intonation at the end of sentences") to focus on next week. Update your vocabulary journal with any words you struggled to recall.</p>
+
+                    <h4 class="font-semibold text-gray-700 mt-4 mb-2">Rubric for "Meeting Contribution & Professional Intro" (Self-Assessment):</h4>
+                    <table class="rubric-table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>25 Points (Excellent)</th>
+                                <th>15 Points (Good)</th>
+                                <th>5 Points (Needs Significant Improvement)</th>
+                                <th>My Score</th>
+                                <th>Notes for Improvement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Clarity & Cohesion</strong></td>
+                                <td>Message is exceptionally clear, logical, and easy to follow. Ideas are well-organized.</td>
+                                <td>Message is generally clear, but some points could be more concise or better organized.</td>
+                                <td>Message is difficult to follow; ideas are disjointed.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w1_r_c1"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w1_n_c1" placeholder="e.g., 'Intro felt a bit rushed at the end,' or 'My meeting point wasn't direct enough.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vocabulary Variety & Appropriateness</strong></td>
+                                <td>Uses a wide range of precise, professional vocabulary and successfully integrates at least 5 new terms from the week's study. Avoids repetition.</td>
+                                <td>Uses appropriate professional vocabulary, but variety is limited, or new terms are not seamlessly integrated (2-4 terms used).</td>
+                                <td>Vocabulary is basic or informal for a professional context; few or no new terms used.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w1_r_c2"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w1_n_c2" placeholder="e.g., 'Used 'great' too many times, could have used 'exceptional' or 'outstanding',' or 'Struggled to recall 'spearheaded'.''"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pronunciation & Intonation</strong></td>
+                                <td>Pronunciation is consistently clear and easy to understand. Intonation sounds natural and aids in conveying meaning; strong and weak syllables are appropriately stressed.</td>
+                                <td>Pronunciation is mostly clear but has some areas that occasionally impede understanding. Intonation is somewhat flat or unnatural in places.</td>
+                                <td>Pronunciation frequently impedes understanding. Intonation is consistently unnatural or distracting.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w1_r_c3"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w1_n_c3" placeholder="e.g., 'My 'th' sound still sounds like 'd',' or 'My questions sounded like statements because of falling intonation.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Confidence & Fluency</strong></td>
+                                <td>Speaks smoothly with minimal hesitation. Voice is confident, well-paced, and engaging.</td>
+                                <td>Generally fluent but has noticeable hesitations or repetitions. Voice may lack consistent confidence or vary in pace.</td>
+                                <td>Frequent hesitations and pauses make the speech disjointed. Voice lacks confidence.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w1_r_c4"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w1_n_c4" placeholder="e.g., 'Pauses were too long when I was thinking of a word,' or 'My voice got softer towards the end of sentences.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Meeting Etiquette (Bonus)</strong></td>
+                                <td>Used polite interruption or clear opening/closing phrases effectively.</td>
+                                <td>Attempted etiquette phrases, but execution could be smoother.</td>
+                                <td>Did not use or misused meeting etiquette phrases.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w1_r_c5"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w1_n_c5" placeholder="e.g., 'Need to practice saying 'May I add something?' more naturally.'"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="total-score">Total Score: <span id="w1_total_score">0</span> / 100</div>
+
+                    <label for="w1su3_top_areas" class="block font-medium mb-1 mt-3">My Top 1-2 Areas for Improvement (Based on Rubric & Reflection):</label>
+                    <textarea id="w1su3_top_areas" class="form-textarea" placeholder="Type here..."></textarea>
+                    <label for="w1su3_next_plan" class="block font-medium mb-1 mt-3">My Plan for Next Week Based on This Reflection:</label>
+                    <textarea id="w1su3_next_plan" class="form-textarea" placeholder="How will I specifically address my improvement areas next week?"></textarea>
+                </div>
+            </details>
+        </div>
+
+        <!-- WEEK 2 -->
+        <div id="week-2" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 2: Presenting Information & Handling Q&A</h2>
+            <p class="mb-4 text-blue-700"><strong>Theme:</strong> Clearly explaining concepts, presenting data, and responding effectively to questions.</p>
+            <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Clarity and Conciseness, Non-Verbal Communication (briefly), Strategic Storytelling (briefly).<br>
+            <strong>Facts Covered:</strong> Phrases for introducing topics, presenting data, transitioning between points, inviting questions, common Q&A phrases.<br>
+            <strong>Procedures Covered:</strong> Structuring presentations (Problem-Solution-Benefit), simplifying complex ideas, handling Q&A gracefully.</p>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Saturday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Concept & Vocabulary Deep Dive (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Read/watch content on structuring short presentations, using data effectively, and common Q&A strategies. Identify 10-15 new professional vocabulary words/phrases related to presenting, analyzing, projecting, and responding to inquiries. Add these to your vocabulary journal.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Video:</strong> "How to Give a Great Presentation" (Search: <a href="https://www.youtube.com/results?search_query=TED+Talk+presentation+skills+or+Business+English+presentation+skills+video" target="_blank" class="resource-link">"TED Talk presentation skills or Business English presentation skills video"</a>). Focus on structure and delivery.</li>
+                        <li><strong>Text:</strong> Phrases for explaining data/trends (e.g., "showing an increase," "stable growth," "projected decline") (Search: <a href="https://www.google.com/search?q=Business+English+phrases+for+describing+trends+or+Presenting+data+in+English+video" target="_blank" class="resource-link">"Business English phrases for describing trends or Presenting data in English video"</a>).</li>
+                        <li><strong>Text/Video:</strong> Q&A phrases (e.g., "That's a good question," "Let me clarify," "To elaborate on that") (Search: <a href="https://www.google.com/search?q=Business+English+Q%26A+phrases" target="_blank" class="resource-link">"Business English Q&A phrases"</a>).</li>
+                    </ul>
+                    <label for="w2s1_notes" class="block font-medium mb-1">My Notes/Key Takeaways from Resources:</label>
+                    <textarea id="w2s1_notes" class="form-textarea"></textarea>
+                    <label for="w2s1_vocab" class="block font-medium mb-1 mt-3">New Vocabulary for Journal (List here before adding to journal):</label>
+                    <textarea id="w2s1_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2s1_c1" class="form-checkbox"> Read/watched resources.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2s1_c2" class="form-checkbox"> Identified and listed 10-15 new vocabulary items.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w2s1_c3" class="form-checkbox"> Added new vocabulary to my dedicated journal.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Pronunciation & Fluency Drill (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Practice sentence stress – identifying the most important words in a sentence and emphasizing them. Work on connected speech (linking words, reductions like 'gonna', 'wanna') to improve fluency. Continue shadowing longer clips (2-3 minutes) from professional presentations, paying attention to natural pauses and pacing.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Video:</strong> Focus on sentence stress and rhythm (Search: <a href="https://www.youtube.com/results?search_query=English+sentence+stress+tutorial+or+connected+speech+English+pronunciation" target="_blank" class="resource-link">"English sentence stress tutorial or connected speech English pronunciation"</a>).</li>
+                        <li><strong>Audio:</strong> Longer segments from TED Talks or business keynotes for advanced shadowing.</li>
+                    </ul>
+                    <label for="w2s2_stress" class="block font-medium mb-1">Specific Sentence Stress/Connected Speech Patterns I Focused On:</label>
+                    <textarea id="w2s2_stress" class="form-textarea"></textarea>
+                    <label for="w2s2_shadowing" class="block font-medium mb-1 mt-3">Shadowing Notes (e.g., speaker's pacing, impactful pauses):</label>
+                    <textarea id="w2s2_shadowing" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2s2_c1" class="form-checkbox"> Practiced sentence stress.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2s2_c2" class="form-checkbox"> Practiced connected speech.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w2s2_c3" class="form-checkbox"> Completed advanced shadowing.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Application & Preparation (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Choose a simple work-related concept or a piece of data you know well (e.g., a project update, a market trend, a process explanation). Draft a 2-3 minute explanation of this, aiming for clarity and conciseness. Prepare for 2-3 potential questions about your topic. Incorporate at least 3 new vocabulary items. Practice speaking these aloud.</p>
+                    <label for="w2s3_topic" class="block font-medium mb-1">My Chosen Concept/Data Explanation Topic:</label>
+                    <input type="text" id="w2s3_topic" class="form-input w-full p-2 border rounded-md">
+                    <label for="w2s3_explanation" class="block font-medium mb-1 mt-3">My Draft: Explanation Script (2-3 minutes):</label>
+                    <textarea id="w2s3_explanation" class="form-textarea"></textarea>
+                    <label for="w2s3_qa" class="block font-medium mb-1 mt-3">My Draft: Potential Q&A Responses (for 2-3 questions):</label>
+                    <textarea id="w2s3_qa" class="form-textarea" placeholder="Question 1 / My Response:&#10;Question 2 / My Response:&#10;Question 3 / My Response:"></textarea>
+                    <label for="w2s3_used_vocab" class="block font-medium mb-1 mt-3">New Vocabulary Used in Drafts (List the 3+ words here, or highlight/bold them in your drafts):</label>
+                    <textarea id="w2s3_used_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2s3_c1" class="form-checkbox"> Drafted explanation.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2s3_c2" class="form-checkbox"> Prepared Q&A responses.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2s3_c3" class="form-checkbox"> Incorporated at least 3 new vocabulary items.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w2s3_c4" class="form-checkbox"> Practiced speaking drafts aloud.</label>
+                    </div>
+                </div>
+            </details>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Sunday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Speaking Practice & Application (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Rehearse your explanation and potential Q&A responses multiple times. Focus on clear articulation, smooth transitions, and a confident, authoritative tone. Time yourself. <strong>Record yourself.</strong></p>
+                    <label for="w2su1_learnings" class="block font-medium mb-1">Key Learnings from Rehearsals:</label>
+                    <textarea id="w2su1_learnings" class="form-textarea" placeholder="Did I sound confident and authoritative?&#10;Were my transitions smooth?&#10;How well did I handle the simulated Q&A?"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2su1_c1" class="form-checkbox"> Rehearsed multiple times.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2su1_c2" class="form-checkbox"> Recorded myself (practice recording).</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w2su1_c3" class="form-checkbox"> Reviewed practice recording.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Deliverable Recording & Submission (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Deliverable:</strong> <strong>"Concept Explanation & Q&A" Video Recording.</strong></p>
+                    <p class="mb-2"><strong>Assignment:</strong> Record a video file (4-5 minutes total) that includes:</p>
+                    <ol class="list-decimal pl-5 mb-3 text-gray-700">
+                        <li>A 2-3 minute explanation of a professional concept or data trend relevant to your work/field. (Simulate a mini-presentation).</li>
+                        <li>A simulated Q&A session where you answer 2-3 questions about your explanation (you can pre-record the questions or imagine someone asking them).</li>
+                    </ol>
+                    <p class="mb-3 text-sm text-gray-600"><strong>Specs:</strong> Maintain eye contact with the camera. Use appropriate professional gestures. Clear audio and video.<br><strong>File Naming Convention:</strong> `YourName_Week2_Deliverable.mp4` (or .mov)</p>
+                    <label for="w2su2_deliverable_confirm" class="block font-medium mb-1">Confirm Deliverable Recording (e.g., "File saved"):</label>
+                    <input type="text" id="w2su2_deliverable_confirm" class="form-input w-full p-2 border rounded-md">
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2su2_c1" class="form-checkbox"> Recorded final deliverable.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w2su2_c2" class="form-checkbox"> Named file correctly.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w2su2_c3" class="form-checkbox"> Saved file for future review/sharing.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Review & Self-Reflection (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Watch your recorded deliverable. Using the rubric below, grade yourself honestly. Pay close attention to your body language and eye contact in addition to your verbal communication. Note specific instances where you could have been more concise or used a more impactful phrase. Identify 1-2 key areas (e.g., "smoother transitions," "more impactful opening statement") for next week.</p>
+
+                    <h4 class="font-semibold text-gray-700 mt-4 mb-2">Rubric for "Concept Explanation & Q&A" (Self-Assessment):</h4>
+                    <table class="rubric-table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>25 Points (Excellent)</th>
+                                <th>15 Points (Good)</th>
+                                <th>5 Points (Needs Significant Improvement)</th>
+                                <th>My Score</th>
+                                <th>Notes for Improvement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Clarity & Cohesion</strong></td>
+                                <td>Explanation is exceptionally clear, logical, and easy to understand. Q&A responses are direct and comprehensive.</td>
+                                <td>Explanation is generally clear but could be more concise or better organized. Q&A responses are adequate but could be more precise.</td>
+                                <td>Explanation is difficult to follow; Q&A responses are unclear or off-topic.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w2_r_c1"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w2_n_c1" placeholder="e.g., 'My intro to the topic was weak,' or 'I rambled a bit during the Q&A.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vocabulary Variety & Appropriateness</strong></td>
+                                <td>Uses a wide range of precise, professional vocabulary relevant to the topic and successfully integrates at least 5 new terms.</td>
+                                <td>Uses appropriate professional vocabulary, but variety is limited, or new terms are not seamlessly integrated (2-4 terms used).</td>
+                                <td>Vocabulary is basic or informal for a professional context; few or no new terms used.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w2_r_c2"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w2_n_c2" placeholder="e.g., 'Needed more synonyms for 'increase',' or 'My data description lacked precision.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pronunciation & Intonation</strong></td>
+                                <td>Pronunciation is consistently clear. Intonation patterns are natural for explanations and responses. Sentence stress is accurate.</td>
+                                <td>Pronunciation is mostly clear but has some areas that occasionally impede understanding. Intonation is somewhat flat or unnatural in places. Sentence stress may be inconsistent.</td>
+                                <td>Pronunciation frequently impedes understanding. Intonation and stress are consistently unnatural or distracting.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w2_r_c3"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w2_n_c3" placeholder="e.g., 'Didn't emphasize key words enough,' or 'My voice sounded monotonous during the explanation.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Confidence & Fluency</strong></td>
+                                <td>Speaks smoothly with minimal hesitation. Voice is confident, well-paced, and engaging. Handles questions calmly and effectively.</td>
+                                <td>Generally fluent but has noticeable hesitations or repetitions. May appear slightly less confident when handling questions.</td>
+                                <td>Frequent hesitations and pauses make the speech disjointed. Struggles significantly with impromptu questions.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w2_r_c4"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w2_n_c4" placeholder="e.g., 'Needed more confident eye contact with the camera,' or 'Hesitated before answering questions.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Non-Verbal Cues (Bonus)</strong></td>
+                                <td>Effective use of eye contact, gestures, and confident posture.</td>
+                                <td>Some use of non-verbal cues, but inconsistent or could be more natural.</td>
+                                <td>Non-verbal cues were distracting or absent.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w2_r_c5"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w2_n_c5" placeholder="e.g., 'Didn't look at the camera enough,' or 'My hand gestures were distracting.'"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="total-score">Total Score: <span id="w2_total_score">0</span> / 100</div>
+
+                    <label for="w2su3_top_areas" class="block font-medium mb-1 mt-3">My Top 1-2 Areas for Improvement (Based on Rubric & Reflection):</label>
+                    <textarea id="w2su3_top_areas" class="form-textarea" placeholder="Type here..."></textarea>
+                    <label for="w2su3_next_plan" class="block font-medium mb-1 mt-3">My Plan for Next Week Based on This Reflection:</label>
+                    <textarea id="w2su3_next_plan" class="form-textarea" placeholder="How will I specifically address my improvement areas next week?"></textarea>
+                </div>
+            </details>
+        </div>
+
+        <!-- WEEK 3 -->
+        <div id="week-3" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 3: Collaborative Communication & Feedback</h2>
+            <p class="mb-4 text-blue-700"><strong>Theme:</strong> Engaging in collaborative discussions, giving and receiving constructive feedback, and active listening.</p>
+            <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Active Listening and Empathy, Collaborative Communication.<br>
+            <strong>Facts Covered:</strong> Phrases for inviting input, building on ideas, constructive disagreement, giving/receiving feedback, empathetic responses.<br>
+            <strong>Procedures Covered:</strong> Facilitating discussions, using "I" statements for feedback, asking clarifying questions.</p>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Saturday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Concept & Vocabulary Deep Dive (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Read/watch content on active listening, collaborative language, and techniques for giving/receiving feedback. Identify 10-15 new professional vocabulary words/phrases related to collaboration, empathy, constructive criticism, and negotiation. Add to your vocabulary journal.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Text/Video:</strong> "Active Listening Skills in the Workplace" (Search: <a href="https://www.google.com/search?q=Active+Listening+Skills+for+Business+HBR+or+YouTube" target="_blank" class="resource-link">"Active Listening Skills for Business HBR or YouTube"</a>).</li>
+                        <li><strong>Text/Video:</strong> "Giving and Receiving Feedback Professionally" (Search: <a href="https://www.google.com/search?q=Constructive+Feedback+in+the+Workplace+video+or+Radical+Candor+summary+video%2Ftext" target="_blank" class="resource-link">"Constructive Feedback in the Workplace video or Radical Candor summary video/text"</a>).</li>
+                        <li><strong>Video:</strong> Role-plays of collaborative discussions or team meetings (Search: <a href="https://www.youtube.com/results?search_query=Business+English+collaboration+phrases+or+Team+meeting+role+play" target="_blank" class="resource-link">"Business English collaboration phrases or Team meeting role play"</a>).</li>
+                    </ul>
+                    <label for="w3s1_notes" class="block font-medium mb-1">My Notes/Key Takeaways from Resources:</label>
+                    <textarea id="w3s1_notes" class="form-textarea"></textarea>
+                    <label for="w3s1_vocab" class="block font-medium mb-1 mt-3">New Vocabulary for Journal (List here before adding to journal):</label>
+                    <textarea id="w3s1_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3s1_c1" class="form-checkbox"> Read/watched resources.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3s1_c2" class="form-checkbox"> Identified and listed 10-15 new vocabulary items.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w3s1_c3" class="form-checkbox"> Added new vocabulary to my dedicated journal.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Pronunciation & Fluency Drill (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Focus on linking sounds between words for smoother speech (e.g., "pick it up" sounds like "pi-ki-tup"). Practice expressing emotion through intonation (e.g., empathy, mild disagreement, enthusiasm). Continue shadowing, now focusing on natural turn-taking in conversations.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Video:</strong> "Connected Speech in English" (Search: <a href="https://www.youtube.com/results?search_query=connected+speech+rule+English" target="_blank" class="resource-link">"connected speech rule English"</a>).</li>
+                        <li><strong>Audio/Video:</strong> Short interview clips or panel discussions for shadowing emphasis and conversational flow.</li>
+                    </ul>
+                    <label for="w3s2_linking" class="block font-medium mb-1">Specific Linking Sounds/Emotional Intonation I Focused On:</label>
+                    <textarea id="w3s2_linking" class="form-textarea"></textarea>
+                    <label for="w3s2_shadowing" class="block font-medium mb-1 mt-3">Shadowing Notes (e.g., how speakers take turns, subtle vocal cues):</label>
+                    <textarea id="w3s2_shadowing" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3s2_c1" class="form-checkbox"> Practiced linking sounds.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3s2_c2" class="form-checkbox"> Practiced emotional intonation.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w3s2_c3" class="form-checkbox"> Completed shadowing for conversational flow.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Application & Preparation (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Prepare two scenarios:</p>
+                    <ol class="list-decimal pl-5 mb-3 text-gray-700">
+                        <li>A scenario where you provide constructive feedback to a colleague about a project.</li>
+                        <li>A scenario where you receive feedback and ask clarifying questions.</li>
+                    </ol>
+                    <p class="mb-2 text-gray-700">Draft specific phrases you would use, ensuring they incorporate new vocabulary and empathetic language. Practice aloud.</p>
+                    <label for="w3s3_giving" class="block font-medium mb-1">My Draft: Giving Feedback Scenario:</label>
+                    <textarea id="w3s3_giving" class="form-textarea" placeholder="Type your script/key phrases here (e.g., using 'I' statements)..."></textarea>
+                    <label for="w3s3_receiving" class="block font-medium mb-1 mt-3">My Draft: Receiving Feedback Scenario:</label>
+                    <textarea id="w3s3_receiving" class="form-textarea" placeholder="Type your script/key phrases here (e.g., asking clarifying questions, acknowledging)..."></textarea>
+                    <label for="w3s3_used_vocab" class="block font-medium mb-1 mt-3">New Vocabulary Used in Drafts (List the 3+ words here, or highlight/bold them in your drafts):</label>
+                    <textarea id="w3s3_used_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3s3_c1" class="form-checkbox"> Prepared feedback scenarios.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3s3_c2" class="form-checkbox"> Incorporated new vocabulary and empathetic language.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w3s3_c3" class="form-checkbox"> Practiced speaking drafts aloud.</label>
+                    </div>
+                </div>
+            </details>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Sunday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Speaking Practice & Application (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Rehearse your feedback scenarios. Focus on using "I" statements, maintaining a respectful tone, and actively listening and responding. Practice adapting your language based on the imaginary response. <strong>Record yourself.</strong></p>
+                    <label for="w3su1_learnings" class="block font-medium mb-1">Key Learnings from Rehearsals:</label>
+                    <textarea id="w3su1_learnings" class="form-textarea" placeholder="Did my tone sound empathetic when giving feedback?&#10;Did I sound genuinely inquisitive when receiving feedback?&#10;How well did I use 'I' statements?"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3su1_c1" class="form-checkbox"> Rehearsed multiple times.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3su1_c2" class="form-checkbox"> Recorded myself (practice recording).</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w3su1_c3" class="form-checkbox"> Reviewed practice recording.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Deliverable Recording & Submission (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Deliverable:</strong> <strong>"Collaborative Dialogue & Feedback" Audio Recording.</strong></p>
+                    <p class="mb-2"><strong>Assignment:</strong> Record an audio file (4-5 minutes total) simulating two separate dialogues:</p>
+                    <ol class="list-decimal pl-5 mb-3 text-gray-700">
+                        <li><strong>Giving Feedback:</strong> You initiate a conversation to give constructive feedback (1.5-2 minutes). You can imagine the other person's brief response.</li>
+                        <li><strong>Receiving Feedback:</strong> You simulate receiving feedback and then respond by asking clarifying questions and acknowledging the input (1.5-2 minutes).</li>
+                    </ol>
+                    <p class="mb-3 text-sm text-gray-600"><strong>Specs:</strong> Ensure clear audio. Focus on intonation that conveys empathy and professionalism.<br><strong>File Naming Convention:</strong> `YourName_Week3_Deliverable.mp3` (or .wav)</p>
+                    <label for="w3su2_deliverable_confirm" class="block font-medium mb-1">Confirm Deliverable Recording (e.g., "File saved"):</label>
+                    <input type="text" id="w3su2_deliverable_confirm" class="form-input w-full p-2 border rounded-md">
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3su2_c1" class="form-checkbox"> Recorded final deliverable.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w3su2_c2" class="form-checkbox"> Named file correctly.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w3su2_c3" class="form-checkbox"> Saved file for future review/sharing.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Review & Self-Reflection (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Listen to your recorded deliverable. Using the rubric below, grade yourself honestly. Pay particular attention to how empathetic or collaborative your tone sounded. Did you use "I" statements effectively? Were your clarifying questions clear? Identify 1-2 key areas (e.g., "stronger closing statements," "more sophisticated transition phrases") for next week.</p>
+
+                    <h4 class="font-semibold text-gray-700 mt-4 mb-2">Rubric for "Collaborative Dialogue & Feedback" (Self-Assessment):</h4>
+                    <table class="rubric-table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>25 Points (Excellent)</th>
+                                <th>15 Points (Good)</th>
+                                <th>5 Points (Needs Significant Improvement)</th>
+                                <th>My Score</th>
+                                <th>Notes for Improvement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Clarity & Cohesion</strong></td>
+                                <td>Communication is exceptionally clear and structured for both giving and receiving feedback. Questions are pertinent.</td>
+                                <td>Communication is generally clear, but some points could be more concise. Questions are adequate.</td>
+                                <td>Communication is unclear; feedback or questions are disjointed.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w3_r_c1"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w3_n_c1" placeholder="e.g., 'Feedback point was a bit vague,' or 'My clarifying question wasn't specific enough.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vocabulary Variety & Appropriateness</strong></td>
+                                <td>Uses a wide range of precise, professional vocabulary appropriate for collaborative and feedback situations, successfully integrating at least 5 new terms.</td>
+                                <td>Uses appropriate vocabulary, but variety is limited, or new terms are not seamlessly integrated (2-4 terms used).</td>
+                                <td>Vocabulary is basic or informal; few or no new terms used.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w3_r_c2"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w3_n_c2" placeholder="e.g., 'Needed more synonyms for 'understand',' or 'My acknowledgements were repetitive.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pronunciation & Intonation</strong></td>
+                                <td>Pronunciation is consistently clear. Intonation conveys appropriate empathy, professionalism, and helps in asking clear questions. Linking sounds are natural.</td>
+                                <td>Pronunciation is mostly clear. Intonation may sometimes sound flat or unnatural for empathetic responses. Linking sounds are inconsistent.</td>
+                                <td>Pronunciation frequently impedes understanding. Intonation is consistently unnatural or distracting; lacks empathetic tone.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w3_r_c3"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w3_n_c3" placeholder="e.g., 'Didn't sound empathetic when saying 'I understand',' or 'Linking sounds made me stumble.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Confidence & Fluency</strong></td>
+                                <td>Speaks smoothly with minimal hesitation. Voice is confident, empathetic, and engaging. Active listening is evident through verbal cues.</td>
+                                <td>Generally fluent but has noticeable hesitations. Voice may lack consistent confidence or empathy.</td>
+                                <td>Frequent hesitations and pauses make the speech disjointed. Struggles to maintain a conversational flow.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w3_r_c4"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w3_n_c4" placeholder="e.g., 'Too many 'umms' when receiving feedback,' or 'My confidence dropped when discussing disagreement.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>"I" Statements & Empathy (Bonus)</strong></td>
+                                <td>Effectively used "I" statements and conveyed genuine empathy.</td>
+                                <td>Attempted "I" statements, but execution could be smoother. Showed some empathy.</td>
+                                <td>Did not use "I" statements or lacked empathetic tone.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w3_r_c5"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w3_n_c5" placeholder="e.g., 'Could have started more sentences with 'I noticed that...', ' or 'Tone was too accusatory, not empathetic enough.'"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="total-score">Total Score: <span id="w3_total_score">0</span> / 100</div>
+
+                    <label for="w3su3_top_areas" class="block font-medium mb-1 mt-3">My Top 1-2 Areas for Improvement (Based on Rubric & Reflection):</label>
+                    <textarea id="w3su3_top_areas" class="form-textarea" placeholder="Type here..."></textarea>
+                    <label for="w3su3_next_plan" class="block font-medium mb-1 mt-3">My Plan for Next Week Based on This Reflection:</label>
+                    <textarea id="w3su3_next_plan" class="form-textarea" placeholder="How will I specifically address my improvement areas next week?"></textarea>
+                </div>
+            </details>
+        </div>
+
+        <!-- WEEK 4 -->
+        <div id="week-4" class="mb-8 p-4 bg-blue-50 rounded-xl shadow">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Week 4: Advanced Articulation & Strategic Communication</h2>
+            <p class="mb-4 text-blue-700"><strong>Theme:</strong> Consolidating skills for advanced articulation, persuasive speaking, and problem-solving communication.</p>
+            <p class="text-sm text-gray-600"><strong>Concepts Covered:</strong> Strategic Storytelling (in depth), Review of all previous concepts.<br>
+            <strong>Facts Covered:</strong> Advanced idiomatic expressions, persuasive language, nuanced vocabulary for problem-solving/negotiation.<br>
+            <strong>Procedures Covered:</strong> Review of STAR Method, Problem-Solution-Benefit, practicing persuasive arguments.</p>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Saturday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Concept & Vocabulary Deep Dive (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Review all previous concepts. Focus on resources related to persuasive communication, negotiation language, and brief strategic storytelling. Identify 10-15 <strong>advanced</strong> professional idioms or nuanced vocabulary items related to strategy, innovation, problem-solving, and influence. Add to your vocabulary journal.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Video:</strong> "The Art of Persuasion" (Search: <a href="https://www.youtube.com/results?search_query=Persuasion+skills+business+English+or+Negotiation+language+business+English" target="_blank" class="resource-link">"Persuasion skills business English or Negotiation language business English"</a>).</li>
+                        <li><strong>Text/Video:</strong> Examples of business storytelling (Search: <a href="https://www.google.com/search?q=Business+storytelling+examples+HBR+or+Storytelling+in+business+video" target="_blank" class="resource-link">"Business storytelling examples HBR or Storytelling in business video"</a>).</li>
+                        <li><strong>Text:</strong> Advanced business idioms list (Search: <a href="https://www.google.com/search?q=Advanced+business+English+idioms+list" target="_blank" class="resource-link">"Advanced business English idioms list"</a>).</li>
+                    </ul>
+                    <label for="w4s1_notes" class="block font-medium mb-1">My Notes/Key Takeaways from Resources:</label>
+                    <textarea id="w4s1_notes" class="form-textarea"></textarea>
+                    <label for="w4s1_vocab" class="block font-medium mb-1 mt-3">New Vocabulary for Journal (List here before adding to journal):</label>
+                    <textarea id="w4s1_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s1_c1" class="form-checkbox"> Reviewed previous concepts.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s1_c2" class="form-checkbox"> Read/watched resources on persuasion/storytelling.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s1_c3" class="form-checkbox"> Identified and listed 10-15 new advanced vocabulary/idioms.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w4s1_c4" class="form-checkbox"> Added new vocabulary to my dedicated journal.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Pronunciation & Fluency Drill (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Comprehensive pronunciation review: Revisit any challenging sounds. Focus on natural pacing and rhythm across longer segments of speech. Practice varying your intonation for emphasis and impact when making persuasive points.</p>
+                    <p class="mb-2"><strong>Resources:</strong></p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li><strong>Your own previous recordings:</strong> Listen to your Week 1-3 recordings and identify lingering pronunciation habits. Target these specifically.</li>
+                        <li><strong>Advanced Shadowing:</strong> Choose a complex TED Talk or a segment from a high-level business interview and shadow for rhythm and nuance.</li>
+                    </ul>
+                    <label for="w4s2_review" class="block font-medium mb-1">Specific Pronunciation/Fluency Areas I Revisited:</label>
+                    <textarea id="w4s2_review" class="form-textarea"></textarea>
+                    <label for="w4s2_pacing" class="block font-medium mb-1 mt-3">Notes on Pacing/Emphasis for Persuasion:</label>
+                    <textarea id="w4s2_pacing" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s2_c1" class="form-checkbox"> Completed comprehensive pronunciation review.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s2_c2" class="form-checkbox"> Practiced varying intonation for emphasis.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w4s2_c3" class="form-checkbox"> Completed advanced shadowing.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Application & Preparation (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Choose a challenging professional scenario:</p>
+                    <ul class="list-disc pl-5 mb-3 text-gray-700">
+                        <li>Convincing your manager to adopt a new strategy.</li>
+                        <li>Pitching an innovative solution to a complex problem.</li>
+                        <li>Addressing a difficult stakeholder concern.</li>
+                    </ul>
+                    <p class="mb-2 text-gray-700">Draft a 3-4 minute persuasive argument or problem-solution explanation. Aim to use compelling language, strategic pauses, and weave in relevant new vocabulary and perhaps a brief anecdote (story).</p>
+                    <label for="w4s3_scenario" class="block font-medium mb-1">My Chosen Scenario:</label>
+                    <input type="text" id="w4s3_scenario" class="form-input w-full p-2 border rounded-md">
+                    <label for="w4s3_argument" class="block font-medium mb-1 mt-3">My Draft: Persuasive Argument/Problem-Solution Script (3-4 minutes):</label>
+                    <textarea id="w4s3_argument" class="form-textarea"></textarea>
+                    <label for="w4s3_used_vocab" class="block font-medium mb-1 mt-3">New Vocabulary/Idioms Used in Drafts (List the 3+ words here, or highlight/bold them in your drafts):</label>
+                    <textarea id="w4s3_used_vocab" class="form-textarea"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s3_c1" class="form-checkbox"> Chosen challenging scenario.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s3_c2" class="form-checkbox"> Drafted persuasive argument/explanation.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4s3_c3" class="form-checkbox"> Incorporated new advanced vocabulary/idioms.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w4s3_c4" class="form-checkbox"> Practiced speaking draft aloud.</label>
+                    </div>
+                </div>
+            </details>
+
+            <h3 class="text-xl font-semibold text-blue-700 mt-6 mb-3">Sunday (3 Hours)</h3>
+
+            <details class="mb-4">
+                <summary>Hour 1: Speaking Practice & Application (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Rehearse your persuasive argument multiple times. Focus on your conviction, vocal delivery, and the logical flow of your argument. Practice different ways to phrase key points for maximum impact. <strong>Record yourself.</strong></p>
+                    <label for="w4su1_learnings" class="block font-medium mb-1">Key Learnings from Rehearsals:</label>
+                    <textarea id="w4su1_learnings" class="form-textarea" placeholder="Did I sound truly convincing?&#10;Was my vocal delivery impactful (e.g., varying tone, strategic pauses)?&#10;Did the argument flow logically?"></textarea>
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4su1_c1" class="form-checkbox"> Rehearsed multiple times.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4su1_c2" class="form-checkbox"> Recorded myself (practice recording).</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w4su1_c3" class="form-checkbox"> Reviewed practice recording.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 2: Deliverable Recording & Submission (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Deliverable:</strong> <strong>"Strategic Communication & Persuasion" Video Recording.</strong></p>
+                    <p class="mb-2"><strong>Assignment:</strong> Record a video file (5-6 minutes total) where you deliver a persuasive argument or a detailed problem-solution explanation for a complex professional scenario.</p>
+                    <p class="mb-3 text-sm text-gray-600"><strong>Specs:</strong> Treat this as if you are speaking to a decision-maker. Maintain strong eye contact, confident posture, and use varied vocal tone to convey conviction.<br><strong>File Naming Convention:</strong> `YourName_Week4_Deliverable.mp4` (or .mov)</p>
+                    <label for="w4su2_deliverable_confirm" class="block font-medium mb-1">Confirm Deliverable Recording (e.g., "File saved"):</label>
+                    <input type="text" id="w4su2_deliverable_confirm" class="form-input w-full p-2 border rounded-md">
+                    <div class="mt-3">
+                        <span class="block font-medium mb-1">Confirmation:</span>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4su2_c1" class="form-checkbox"> Recorded final deliverable.</label>
+                        <label class="inline-flex items-center mr-4"><input type="checkbox" id="w4su2_c2" class="form-checkbox"> Named file correctly.</label>
+                        <label class="inline-flex items-center"><input type="checkbox" id="w4su2_c3" class="form-checkbox"> Saved file for future review/sharing.</label>
+                    </div>
+                </div>
+            </details>
+
+            <details class="mb-4">
+                <summary>Hour 3: Review & Self-Reflection (1 hour)</summary>
+                <div class="details-content">
+                    <p class="mb-2"><strong>Activity:</strong> Watch your recorded deliverable. Using the rubric below, conduct a final comprehensive self-assessment of your journey over the past four weeks. What were your biggest improvements? What remains your greatest challenge? Plan your next steps based on this reflection (e.g., repeating a week's focus, targeting specific weak areas, finding a conversation partner).</p>
+
+                    <h4 class="font-semibold text-gray-700 mt-4 mb-2">Rubric for "Strategic Communication & Persuasion" (Self-Assessment):</h4>
+                    <table class="rubric-table">
+                        <thead>
+                            <tr>
+                                <th>Criterion</th>
+                                <th>25 Points (Excellent)</th>
+                                <th>15 Points (Good)</th>
+                                <th>5 Points (Needs Significant Improvement)</th>
+                                <th>My Score</th>
+                                <th>Notes for Improvement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Clarity & Persuasiveness</strong></td>
+                                <td>Argument is exceptionally clear, logical, and highly persuasive. Problem-solution is compelling.</td>
+                                <td>Argument is generally clear but could be more impactful or better structured. Persuasiveness is moderate.</td>
+                                <td>Argument is unclear or unconvincing; lacks logical flow.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w4_r_c1"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w4_n_c1" placeholder="e.g., 'The logical flow of my argument wasn't strong enough,' or 'Didn't articulate the 'why' effectively.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vocabulary Variety & Nuance</strong></td>
+                                <td>Uses a sophisticated range of precise, nuanced professional vocabulary, including advanced idioms, to enhance persuasiveness and depth. Seamlessly integrates new terms.</td>
+                                <td>Uses appropriate vocabulary, but variety is somewhat limited, or advanced terms are not always naturally integrated.</td>
+                                <td>Vocabulary is basic or informal; lacks the sophistication required for strategic communication.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w4_r_c2"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w4_n_c2" placeholder="e.g., 'Could have used more nuanced verbs,' or 'Some idioms felt forced, not natural.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pronunciation & Intonation</strong></td>
+                                <td>Pronunciation is consistently clear and natural. Intonation, rhythm, and stress are masterfully used to convey emphasis, emotion, and confidence, enhancing the persuasive impact.</td>
+                                <td>Pronunciation is mostly clear. Intonation and stress are generally appropriate but may lack the subtle nuances for high-level persuasion.</td>
+                                <td>Pronunciation frequently impedes understanding. Intonation and stress are consistently unnatural or distracting, hindering persuasive effort.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w4_r_c3"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w4_n_c3" placeholder="e.g., 'Didn't vary my tone enough to emphasize key points,' or 'My rhythm was too uniform, didn't sound natural.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Confidence & Fluency</strong></td>
+                                <td>Speaks with exceptional fluency, confidence, and authority. Pacing is strategic, and delivery is highly engaging and impactful.</td>
+                                <td>Generally fluent but may have occasional hesitations or less consistent confidence. Delivery is mostly engaging but may lack strategic pacing.</td>
+                                <td>Frequent hesitations and pauses make the speech disjointed. Lacks confidence and struggles to maintain audience engagement.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w4_r_c4"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w4_n_c4" placeholder="e.g., 'Paced too quickly during complex parts,' or 'Voice lacked conviction on the main recommendation.'"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Strategic Storytelling (Bonus)</strong></td>
+                                <td>Successfully integrated a brief, relevant anecdote or example to enhance persuasiveness.</td>
+                                <td>Attempted storytelling, but it felt somewhat tacked on or unclear.</td>
+                                <td>Did not attempt or misused storytelling.</td>
+                                <td><input type="number" min="0" max="25" class="score-input" data-rubric-id="w4_r_c5"></td>
+                                <td><textarea class="form-textarea" data-rubric-id="w4_n_c5" placeholder="e.g., 'My story didn't directly support the argument,' or 'Story could have been more concise.'"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="total-score">Total Score: <span id="w4_total_score">0</span> / 100</div>
+
+                    <label for="w4su3_top_areas" class="block font-medium mb-1 mt-3">My Top 1-2 Areas for Improvement (Based on Rubric & Reflection):</label>
+                    <textarea id="w4su3_top_areas" class="form-textarea" placeholder="Type here..."></textarea>
+                    <label for="w4su3_next_plan" class="block font-medium mb-1 mt-3">My Plan for Next Week Based on This Reflection:</label>
+                    <textarea id="w4su3_next_plan" class="form-textarea" placeholder="How will I specifically address my improvement areas next week?"></textarea>
+                </div>
+            </details>
+        </div>
+
+        <div class="p-6 bg-green-100 border-l-4 border-green-500 text-green-700 rounded-lg shadow-md mt-8">
+            <h2 class="text-xl font-bold mb-3 text-green-800">Congratulations!</h2>
+            <p class="mb-3">You've completed your initial 4-week intensive study plan for Professional Workplace English. Remember, language learning is a continuous journey. You've built a strong foundation and developed critical self-assessment skills.</p>
+            <p class="mb-3">Keep practicing, stay curious, and embrace every opportunity to communicate confidently in English at work.</p>
+            <p class="font-semibold text-green-900">You are now better equipped to articulate your thoughts, enhance collaborations, and speak with the confidence that will propel your career forward!</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Function to save data to localStorage
+        function saveData(id, value) {
+            localStorage.setItem(id, value);
+        }
+
+        // Function to load data from localStorage
+        function loadData(id) {
+            return localStorage.getItem(id);
+        }
+
+        // Function to update total score for a given week
+        function updateWeekTotalScore(weekId) {
+            let totalScore = 0;
+            const scoreInputs = document.querySelectorAll(`#week-${weekId} .score-input`);
+            scoreInputs.forEach(input => {
+                const score = parseInt(input.value) || 0;
+                totalScore += score;
+            });
+            document.getElementById(`w${weekId}_total_score`).textContent = totalScore;
+            saveData(`w${weekId}_total_score`, totalScore); // Save the total score too
+        }
+
+        // Initialize workbook on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load textareas and input fields
+            document.querySelectorAll('textarea, input[type="text"]').forEach(element => {
+                const id = element.id;
+                const savedValue = loadData(id);
+                if (savedValue !== null) {
+                    element.value = savedValue;
+                }
+                element.addEventListener('input', () => saveData(id, element.value));
+            });
+
+            // Load checkboxes
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                const id = checkbox.id;
+                const savedState = loadData(id);
+                if (savedState === 'true') {
+                    checkbox.checked = true;
+                } else {
+                    checkbox.checked = false; // Ensure it's false if not 'true'
+                }
+                checkbox.addEventListener('change', () => saveData(id, checkbox.checked));
+            });
+
+            // Load score inputs and calculate totals
+            document.querySelectorAll('.score-input').forEach(input => {
+                const id = input.dataset.rubricId; // Use data-rubric-id for scores
+                const savedValue = loadData(id);
+                if (savedValue !== null) {
+                    input.value = savedValue;
+                }
+                input.addEventListener('input', (event) => {
+                    const value = parseInt(event.target.value);
+                    if (isNaN(value) || value < 0) {
+                        event.target.value = 0; // Default to 0 or clamp
+                    } else if (value > 25) {
+                        event.target.value = 25; // Clamp max score
+                    }
+                    saveData(id, event.target.value);
+                    const weekId = event.target.closest('[id^="week-"]').id.replace('week-', '');
+                    updateWeekTotalScore(weekId);
+                });
+            });
+
+            // Load rubric notes (textareas within rubric table)
+            document.querySelectorAll('textarea[data-rubric-id]').forEach(textarea => {
+                const id = textarea.dataset.rubricId;
+                const savedValue = loadData(id);
+                if (savedValue !== null) {
+                    textarea.value = savedValue;
+                }
+                textarea.addEventListener('input', () => saveData(id, textarea.value));
+            });
+
+
+            // Initial calculation of total scores
+            for (let i = 1; i <= 4; i++) {
+                updateWeekTotalScore(i);
+            }
+        });
+    </script>
+</body>
+</html>
